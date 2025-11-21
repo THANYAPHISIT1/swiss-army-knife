@@ -5,6 +5,10 @@ export type UtilityTab =
   | 'base64'
   | 'timestamp'
   | 'regex'
+  | 'yaml'
+  | 'sql'
+  | 'diff'
+  | 'px-rem'
   | 'color'
   | 'image-resize'
   | 'image-convert'
@@ -12,6 +16,8 @@ export type UtilityTab =
   | 'hash'
   | 'password'
   | 'jwt'
+  | 'cron'
+  | 'token'
   | 'scratchpad';
 
 interface AppStore {

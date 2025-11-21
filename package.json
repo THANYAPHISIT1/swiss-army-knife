@@ -15,10 +15,15 @@
     "@tauri-apps/plugin-dialog": "^2.4.2",
     "@tauri-apps/plugin-fs": "^2.4.4",
     "@tauri-apps/plugin-opener": "^2",
+    "@types/diff": "^7.0.2",
+    "@types/js-yaml": "^4.0.9",
     "date-fns": "^4.1.0",
+    "diff": "^8.0.2",
+    "js-yaml": "^4.1.1",
     "react": "^19.1.0",
     "react-colorful": "^5.6.1",
     "react-dom": "^19.1.0",
+    "sql-formatter": "^15.6.10",
     "zustand": "^5.0.8"
   },
   "devDependencies": {

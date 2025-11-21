@@ -5,9 +5,15 @@ import { useKeyboardShortcuts } from './hooks/useKeyboardShortcuts';
 import TabNavigation from './components/TabNavigation';
 import ThemeToggle from './components/ThemeToggle';
 import JsonFormatter from './components/utilities/JsonFormatter';
+import YamlConverter from './components/utilities/YamlConverter';
 import Base64Converter from './components/utilities/Base64Converter';
 import TimestampConverter from './components/utilities/TimestampConverter';
 import RegexTester from './components/utilities/RegexTester';
+import SqlFormatter from './components/utilities/SqlFormatter';
+import DiffChecker from './components/utilities/DiffChecker';
+import PxRemConverter from './components/utilities/PxRemConverter';
+import CrontabGenerator from './components/utilities/CrontabGenerator';
+import TokenCounter from './components/utilities/TokenCounter';
 import ColorPicker from './components/utilities/ColorPicker';
 import ImageResizer from './components/utilities/ImageResizer';
 import ImageConverter from './components/utilities/ImageConverter';
@@ -41,12 +47,24 @@ function App() {
     switch (activeTab) {
       case 'json':
         return <JsonFormatter />;
+      case 'yaml':
+        return <YamlConverter />;
       case 'base64':
         return <Base64Converter />;
       case 'timestamp':
         return <TimestampConverter />;
       case 'regex':
         return <RegexTester />;
+      case 'sql':
+        return <SqlFormatter />;
+      case 'diff':
+        return <DiffChecker />;
+      case 'px-rem':
+        return <PxRemConverter />;
+      case 'cron':
+        return <CrontabGenerator />;
+      case 'token':
+        return <TokenCounter />;
       case 'color':
         return <ColorPicker />;
       case 'image-resize':

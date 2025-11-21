@@ -12,9 +12,15 @@ const categories: Category[] = [
     label: 'Data & Formatting',
     utilities: [
       { id: 'json', label: 'JSON', icon: '{}' },
+      { id: 'yaml', label: 'YAML', icon: '📄' },
       { id: 'base64', label: 'Base64', icon: '64' },
       { id: 'timestamp', label: 'Timestamp', icon: '🕐' },
       { id: 'regex', label: 'Regex', icon: '/.*/' },
+      { id: 'sql', label: 'SQL', icon: '🗄️' },
+      { id: 'diff', label: 'Diff', icon: '⚖️' },
+      { id: 'px-rem', label: 'PX/REM', icon: '📏' },
+      { id: 'cron', label: 'Crontab', icon: '⏰' },
+      { id: 'token', label: 'Tokens', icon: '🔢' },
     ],
   },
   {
