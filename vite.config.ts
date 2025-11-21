@@ -29,4 +29,17 @@ export default defineConfig(async () => ({
       ignored: ["**/src-tauri/**"],
     },
   },
+  // Build optimizations
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'react-vendor': ['react', 'react-dom'],
+          'tauri-vendor': ['@tauri-apps/api', '@tauri-apps/plugin-clipboard-manager', '@tauri-apps/plugin-dialog', '@tauri-apps/plugin-fs'],
+          'utilities': ['js-yaml', 'sql-formatter', 'diff', 'date-fns'],
+        },
+      },
+    },
+    chunkSizeWarningLimit: 1000,
+  },
 }));
