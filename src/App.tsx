@@ -9,6 +9,13 @@ import Base64Converter from './components/utilities/Base64Converter';
 import TimestampConverter from './components/utilities/TimestampConverter';
 import RegexTester from './components/utilities/RegexTester';
 import ColorPicker from './components/utilities/ColorPicker';
+import ImageResizer from './components/utilities/ImageResizer';
+import ImageConverter from './components/utilities/ImageConverter';
+import UuidGenerator from './components/utilities/UuidGenerator';
+import HashGenerator from './components/utilities/HashGenerator';
+import PasswordGenerator from './components/utilities/PasswordGenerator';
+import JwtDebugger from './components/utilities/JwtDebugger';
+import SmartScratchpad from './components/utilities/SmartScratchpad';
 
 function App() {
   const { activeTab } = useAppStore();
@@ -42,6 +49,20 @@ function App() {
         return <RegexTester />;
       case 'color':
         return <ColorPicker />;
+      case 'image-resize':
+        return <ImageResizer />;
+      case 'image-convert':
+        return <ImageConverter />;
+      case 'uuid':
+        return <UuidGenerator />;
+      case 'hash':
+        return <HashGenerator />;
+      case 'password':
+        return <PasswordGenerator />;
+      case 'jwt':
+        return <JwtDebugger />;
+      case 'scratchpad':
+        return <SmartScratchpad />;
       default:
         return <JsonFormatter />;
     }
