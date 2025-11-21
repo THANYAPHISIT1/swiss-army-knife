@@ -1,17 +1,35 @@
 # Dev Utility Belt
 
-A lightweight macOS desktop application that consolidates commonly-used developer utilities into a single, fast-loading app.
+A comprehensive macOS desktop application that consolidates 12+ commonly-used developer utilities into a single, fast-loading app. Built with Tauri + React + TypeScript for native performance and modern UX.
 
 ## Features
 
-- **JSON Formatter/Validator** - Format, validate, and beautify JSON with syntax highlighting
+### Data & Formatting
+- **JSON Formatter/Validator** - Format, validate, and beautify JSON with customizable indentation
 - **Base64 Encoder/Decoder** - Convert text to/from Base64
-- **Unix Timestamp Converter** - Convert timestamps with timezone support
-- **Regex Tester** - Test regular expressions with match highlighting
-- **Color Picker** - Pick colors with outputs in HEX, RGB, HSL formats
+- **Unix Timestamp Converter** - Convert timestamps with timezone support (seconds/milliseconds)
+- **Regex Tester** - Test regular expressions with live match highlighting and all flags
+
+### Image Tools
+- **Image Resizer** - Resize images by pixel or percentage, maintain aspect ratio
+- **Image Converter** - Convert between JPG, PNG, WebP, GIF, BMP, TIFF, ICO formats
+
+### Color
+- **Color Picker** - Visual color picker with HEX, RGB, HSL outputs
+
+### Security & Generators
+- **UUID Generator** - Generate UUID v4 (random) and v7 (time-based), bulk generation
+- **Hash Generator** - Generate MD5, SHA-256, and SHA-512 hashes
+- **Password Generator** - Generate secure passwords with customizable options
+- **JWT Debugger** - Decode and inspect JWT tokens offline (no external servers)
+
+### Utilities
+- **Smart Scratchpad** - Auto-saving notepad with JSON/XML formatting
+
+### System Features
 - **Clipboard Integration** - Quick copy functionality across all utilities
-- **Theme Support** - Dark and light mode
-- **Keyboard Shortcuts** - Fast navigation with keyboard shortcuts
+- **Theme Support** - Dark and light mode with persistence
+- **Category Navigation** - Organized by function for easy access
 
 ## Tech Stack
 
