@@ -1,10 +1,8 @@
-use image::{DynamicImage, ImageFormat, ImageReader};
-use std::io::Cursor;
+use image::{ImageFormat, ImageReader};
 use std::path::Path;
 use sha2::{Sha256, Sha512, Digest};
 use md5::Md5;
 use rand::Rng;
-use rand::distributions::Alphanumeric;
 
 // Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
 #[tauri::command]
